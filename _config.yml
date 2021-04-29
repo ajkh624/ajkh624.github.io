@@ -1,0 +1,64 @@
+# Site
+name: "JH의 선물 블로그"
+title: "JH의 선물 블로그"
+description: "JH의 선물 블로그 입니다."
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: /
+url: "https://ajkh624.github.io/"
+google_analytics: 'UA-179103434-1'
+disqus: 'jhblog-1'
+mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  JH:  
+    name: JH
+    display_name: JH
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: ajkh624@gmail.com
+    web: https://ajkh624.github.io/
+    twitter: 
+    description: "원하는 것을 추천해주는 마법의 블로그."
+ 
+# Plugins
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 12
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3096923707981805"
+adsense-data-ad-slot: "3529029703"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
